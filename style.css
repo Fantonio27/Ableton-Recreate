@@ -3,8 +3,8 @@
 :root {
     --textColor: red;
     --backgroundColor: #f3f3f3;
-    --fontFamily:'Futura PT', sans-serif;
-                                                
+    --fontFamily: 'Futura PT', sans-serif;
+
 }
 
 body {
@@ -23,7 +23,7 @@ body {
     max-width: 1600px;
 }
 
-nav{
+nav {
     padding: 5px 40px;
     border-bottom: 2px solid var(--backgroundColor);
     display: flex;
@@ -31,15 +31,15 @@ nav{
     align-items: center;
 }
 
-.leftSideNavbar, .rightSideNavbar{
+.leftSideNavbar,
+.rightSideNavbar {
     display: flex;
     align-items: center;
     gap: 40px;
     font-size: 20px;
-    font-weight: 500;
 }
 
-.logoImage{
+.logoImage {
     width: 60px;
 }
 
@@ -48,17 +48,12 @@ nav{
     gap: 40px;
 }
 
-.fields li {
-    /* font-size: 20px; */
-}
-
 li {
     list-style-type: none;
-    font-family: var(--fontFamily);
-
+    cursor: pointer;
 }
 
-.rightSideNavbar p:last-child{
-    font-size: 16px;
+.rightSideNavbar p {
+    cursor: pointer;
 }
 
