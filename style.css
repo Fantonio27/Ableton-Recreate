@@ -22,7 +22,7 @@ body {
 .container {
     background-color: white;
     margin: auto;
-    max-width: 1600px;
+    max-width: 1585px;
 }
 
 nav {
@@ -60,7 +60,7 @@ li {
 }
 
 .sectionsContainer{
-    padding: 70px 0px 0px;
+    padding: 70px 0px 70px;
 }
 
 header{
@@ -95,6 +95,42 @@ header > h1 {
     font-weight: 400;
     color: rgba(1, 1, 1, 0.8);
     margin-top:25px;
+}
+
+
+.thirdSection{  
+    position: relative;
+    width: 100%;
+}
+
+.pictureSection{
+    padding: 130px 0px;
+    width: 83%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.thirdSection img:first-child{
+    width: 50.5%;
+    max-height: 670px;
+    object-fit:cover
+}
+
+.thirdSection img:nth-child(2){
+    width: 40%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.yellowBackground{
+    position: absolute;
+    background-color: #fbffa7;
+    width: 57.9%;
+    height: 100%;
+    right: 0;
 }
 
 
