@@ -1,4 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/futura-pt?styles=117668');
+@import url('https://fonts.cdnfonts.com/css/futura-pt');
 
 :root {
     --textColor: red;
@@ -10,11 +10,13 @@
 body {
     background-color: var(--backgroundColor);
     font-family: var(--fontFamily);
+
 }
 
 * {
     margin: 0px;
     padding: 0px;
+    font-weight: 450;
 }
 
 .container {
@@ -77,5 +79,22 @@ header{
 header > h1 {
     font-size: 138px;
     color: #FD5948;
-    font-weight: 500;
 }
+
+.secondSection{
+    margin: 140px auto;
+    width: 50%;
+}
+
+.secondSection > h2 {
+    font-size: 30px;
+}
+
+.secondSection > p {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(1, 1, 1, 0.8);
+    margin-top:25px;
+}
+
+
