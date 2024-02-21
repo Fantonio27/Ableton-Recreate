@@ -81,29 +81,33 @@ header > h1 {
     color: #FD5948;
 }
 
-.secondSection{
+.textSection{
     margin: 140px auto;
     width: 50%;
 }
 
-.secondSection > h2 {
+.textSection > h2 {
     font-size: 30px;
 }
 
-.secondSection > p {
+.textSection > p {
     font-size: 20px;
     font-weight: 400;
     color: rgba(1, 1, 1, 0.8);
     margin-top:25px;
 }
 
+.textSection > div {
+    margin: 135px 0px;
+}
 
-.thirdSection{  
+
+.pictureSection{  
     position: relative;
     width: 100%;
 }
 
-.pictureSection{
+.pictureContainer{
     padding: 130px 0px;
     width: 83%;
     margin: auto;
@@ -113,19 +117,19 @@ header > h1 {
     position: relative;
 }
 
-.thirdSection img:first-child{
+.pictureContainer img:first-child{
     width: 50.5%;
     max-height: 670px;
     object-fit:cover
 }
 
-.thirdSection img:nth-child(2){
+.pictureContainer img:nth-child(2){
     width: 40%;
     max-height: 400px;
     object-fit: cover;
 }
 
-.yellowBackground{
+.pictureSectionBg{
     position: absolute;
     background-color: #fbffa7;
     width: 57.9%;
