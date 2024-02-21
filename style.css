@@ -57,3 +57,25 @@ li {
     cursor: pointer;
 }
 
+.sectionsContainer{
+    padding: 70px 0px 0px;
+}
+
+header{
+    margin: auto;
+    width: 80%;
+    height: calc(100vh - 120px);
+    background: url("/public/HeaderPicture2.jpg") rgba(8, 8, 8, 0.3);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header > h1 {
+    font-size: 138px;
+    color: #FD5948;
+    font-weight: 500;
+}
