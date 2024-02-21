@@ -1,0 +1,64 @@
+@import url('https://fonts.cdnfonts.com/css/futura-pt?styles=117668');
+
+:root {
+    --textColor: red;
+    --backgroundColor: #f3f3f3;
+    --fontFamily:'Futura PT', sans-serif;
+                                                
+}
+
+body {
+    background-color: var(--backgroundColor);
+    font-family: var(--fontFamily);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    background-color: white;
+    margin: auto;
+    max-width: 1600px;
+}
+
+nav{
+    padding: 5px 40px;
+    border-bottom: 2px solid var(--backgroundColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftSideNavbar, .rightSideNavbar{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.logoImage{
+    width: 60px;
+}
+
+.fields {
+    display: flex;
+    gap: 40px;
+}
+
+.fields li {
+    /* font-size: 20px; */
+}
+
+li {
+    list-style-type: none;
+    font-family: var(--fontFamily);
+
+}
+
+.rightSideNavbar p:last-child{
+    font-size: 16px;
+}
+
