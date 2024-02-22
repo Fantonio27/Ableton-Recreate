@@ -144,13 +144,13 @@ header>h1 {
     position: relative;
 }
 
-.pictureContainer img:first-child {
+.pictureOne, .pictureSeven{
     width: 50.5%;
     max-height: 670px;
     object-fit: cover;
 }
 
-.pictureContainer img:nth-child(2) {
+.pictureTwo, .pictureSix{
     width: 40%;
     max-height: 400px;
     object-fit: cover;
@@ -287,4 +287,21 @@ footer>section:last-child {
     font-weight: 450;
     font-size: 20px;
     width: 20%;
+}
+
+.center{
+    background-color: #d5b3ff;
+    left: 50%;
+    transform: translate(-50%);
+    width: 68%;
+}
+
+.pictureSix{
+    width: 37%;
+    max-height: 400px;
+}
+
+.pictureSeven{
+    width: 46%;
+    max-height: 670px;
 }
