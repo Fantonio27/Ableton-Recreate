@@ -4,13 +4,11 @@
     --textColor: red;
     --backgroundColor: #f3f3f3;
     --fontFamily: 'Futura PT', sans-serif;
-
 }
 
 body {
     background-color: var(--backgroundColor);
     font-family: var(--fontFamily);
-
 }
 
 * {
@@ -59,11 +57,11 @@ li {
     cursor: pointer;
 }
 
-.sectionsContainer{
-    padding: 70px 0px 70px;
+.sectionsContainer {
+    padding: 70px 0px 135px;
 }
 
-header{
+header {
     margin: auto;
     width: 80%;
     height: calc(100vh - 120px);
@@ -76,33 +74,33 @@ header{
     align-items: center;
 }
 
-header > h1 {
+header>h1 {
     font-size: 138px;
     color: #FD5948;
 }
 
-.textSection{
+.textSection {
     margin: 140px 0px;
     width: 100%;
 }
 
-.textSection > section {
+.textSection>section {
     width: 50%;
     margin: auto;
 }
 
-.textSection > section > h2 {
+.textSection>section>h2 {
     font-size: 30px;
 }
 
-.textSection > section > p {
+.textSection>section>p {
     font-size: 20px;
     font-weight: 400;
     color: rgba(1, 1, 1, 0.8);
-    margin-top:25px;
+    margin-top: 25px;
 }
 
-.textSection > div {
+.textSection>div {
     margin: 135px 0px;
     position: relative;
     width: 100%;
@@ -113,11 +111,11 @@ header > h1 {
     width: max-content;
 }
 
-.textSection > div > img {
+.textSection>div>img {
     width: 84%;
     margin: auto;
     display: block;
-    max-height:750px;
+    max-height: 750px;
     object-fit: cover;
 }
 
@@ -131,12 +129,12 @@ header > h1 {
     transform: translate(-50%,-50%);
 } */
 
-.pictureSection{  
+.pictureSection {
     position: relative;
     width: 100%;
 }
 
-.pictureContainer{
+.pictureContainer {
     padding: 130px 0px;
     width: 83%;
     margin: auto;
@@ -146,19 +144,19 @@ header > h1 {
     position: relative;
 }
 
-.pictureContainer img:first-child{
+.pictureContainer img:first-child {
     width: 50.5%;
     max-height: 670px;
-    object-fit:cover;
-}
-
-.pictureContainer img:nth-child(2){
-    width: 40%;
-    max-height:400px;
     object-fit: cover;
 }
 
-.pictureSectionBg{
+.pictureContainer img:nth-child(2) {
+    width: 40%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.pictureSectionBg {
     position: absolute;
     background-color: #fbffa7;
     width: 57.9%;
@@ -166,19 +164,18 @@ header > h1 {
     right: 0;
 }
 
-.boxContainer{
+.boxContainer {
     display: flex;
     width: 85%;
     margin: auto;
-    background-color: red;
     max-height: 670px;
 }
 
-.boxContainer > div {
+.boxContainer>div {
     width: 50%;
 }
 
-.boxImageContainer > img {
+.boxImageContainer>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -193,10 +190,101 @@ header > h1 {
     gap: 30px;
 }
 
-.boxTextContainer > h2 {
+.boxTextContainer>h2 {
     width: 60%;
     font-size: 30px;
 }
 
+footer {
+    border-top: 2px solid var(--backgroundColor);
+    padding: 135px;
+    display: grid;
+    gap: 50px;
+}
 
+footer li {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(1, 1, 1, 0.9);
+    line-height: 2rem;
+}
 
+.footerHeader {
+    font-size: 60px;
+    ;
+}
+
+.iconSection {
+    margin-top: 10px;
+}
+
+.iconSection img {
+    padding: 5px;
+    margin-right: 5px;
+}
+
+footer>section {
+    display: flex;
+    gap: 50px;
+}
+
+footer>section>section {
+    width: 26.5%;
+}
+
+footer>section:last-child {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footerLowerSection {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 14px;
+}
+
+.footerLowerSection li {
+    font-size: 14px;
+    font-weight: 450;
+}
+
+.dropDown {
+    width: 40%;
+    padding: 5px;
+    background-color: var(--backgroundColor);
+    border: 0px;
+    font-size: 14px;
+    font-weight: 450;
+    font-family: var(--fontFamily);
+}
+
+.dropDown:last-child {
+    width: 60%;
+}
+
+.form {
+    width: 40%;
+}
+
+.formText {
+    border: 0px;
+    background-color: var(--backgroundColor);
+    padding: 7px 0px;
+    font-size: 20px;
+    font-family: var(--fontFamily);
+    font-weight: 400;
+    text-indent: 15px;
+    width: 80%;
+}
+
+.formButton {
+    border-radius: 0px;
+    border: 0px;
+    background-color: #0000ff;
+    color: white;
+    font-family: var(--fontFamily);
+    font-weight: 450;
+    font-size: 20px;
+    width: 20%;
+}
