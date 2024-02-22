@@ -149,7 +149,7 @@ header > h1 {
 .pictureContainer img:first-child{
     width: 50.5%;
     max-height: 670px;
-    object-fit:cover
+    object-fit:cover;
 }
 
 .pictureContainer img:nth-child(2){
