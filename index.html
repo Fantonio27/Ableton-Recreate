@@ -9,8 +9,8 @@
     <link rel="icon" href="./public/logo.png">
 </head>
 
-<body id="container">
-    <div class="container"  >
+<body>
+    <div class="container">
         <nav>
             <div class="topNavbar">
                 <div class="leftSideNavbar">
@@ -105,8 +105,8 @@
             <div class="pictureSection">
                 <div class="pictureSectionBg"></div>
                 <div class="pictureContainer">
-                    <img src="/public/ivana-cajina-T9YfR-xHjBs-unsplash.jpg" alt="picture1" class="pictureOne">
-                    <img src="public/erik-mclean-QzpgqElvSiA-unsplash.jpg" alt="picture2" class="pictureTwo">
+                    <img src="/public/Image1.jpg" alt="picture1" class="pictureOne">
+                    <img src="public/Image2.jpg" alt="picture2" class="pictureTwo">
                 </div>
             </div>
 
@@ -120,13 +120,16 @@
                 </section>
 
                 <div>
-                    <div class="circle"></div>
+                    <div class="circle" onclick="playVideo()">
+                        <img width="42" height="42" src="https://img.icons8.com/ios-glyphs/60/FFFFFF/play--v1.png" alt="play--v1"/>
+                    </div>
                     <div class="videoContainer">
+                        <img src="public/HeaderPicture.jpg" alt="" class="imageVideoBg">
                         <iframe width="800" height="430" src="https://www.youtube.com/embed/9SbnhgjeyXA"
                         title="Why Ableton - Juanpe" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-                        <p>Why Ableton - Juanpe Bolivar</p>
+                        allowfullscreen id="youtubeVideo" style="display: none;"></iframe>
+                        <p style="font-weight: 450; font-size: 14px;margin-top: 5px;">Why Ableton - Juanpe Bolivar</p>
                     </div>
                 </div>
 
@@ -147,10 +150,9 @@
             <div class="pictureSection">
                 <div class="pictureSectionBg" style="left: 0; width: 58.5%; background-color: #b6ffc0;"></div>
                 <div class="pictureGrid">
-                    <img src="/public/ivana-cajina-T9YfR-xHjBs-unsplash.jpg" alt="picture2" class="pictureThree">
-                    
-                    <img src="public/ivana-cajina-T9YfR-xHjBs-unsplash.jpg" alt="picture3" class="pictureFour">
-                    <img src="public/ivana-cajina-T9YfR-xHjBs-unsplash.jpg" alt="picture3" class="pictureFive">
+                    <img src="/public/Image3.jpg" alt="picture2" class="pictureThree">
+                    <img src="public/Image4.jpg" alt="picture3" class="pictureFour">
+                    <img src="public/Image5.jpg" alt="picture3" class="pictureFive">
                 </div>
             </div>
 
@@ -165,7 +167,7 @@
                 </section>
 
                 <div>
-                    <img src="public/HeaderPicture.jpg" alt="">
+                    <img src="public/Image6.jpg" alt="">
                 </div>
 
                 <section>
@@ -182,8 +184,8 @@
             <div class="pictureSection" style="justify-content: flex-end;">
                 <div class="pictureSectionBg center"></div>
                 <div class="pictureContainer" style="margin:0px; width: 91.5%;">
-                    <img src="public/erik-mclean-QzpgqElvSiA-unsplash.jpg" alt="picture3" class="pictureSix">
-                    <img src="public/ivana-cajina-T9YfR-xHjBs-unsplash.jpg" alt="picture3" class="pictureSeven"> 
+                    <img src="public/Image7.jpg" alt="picture3" class="pictureSix">
+                    <img src="public/Image8.jpg" alt="picture3" class="pictureSeven"> 
                 </div>
 
             </div>
@@ -207,7 +209,7 @@
 
             <div class="boxContainer">
                 <div class="boxImageContainer">
-                    <img src="public/yan-berthemy-63CxrwDVeWE-unsplash.jpg" alt="">
+                    <img src="public/Image9.jpg" alt="">
                 </div>
                 <div class="boxTextContainer">
                     <h2>We’re really proud of the work we’ve done so far. But there’s so much more to come. If you’d like to be a part of it, please join us.</h2>
