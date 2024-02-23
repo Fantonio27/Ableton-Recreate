@@ -9,27 +9,82 @@
     <link rel="icon" href="./public/logo.png">
 </head>
 
-<body>
-    <div class="container">
+<body id="container">
+    <div class="container"  >
         <nav>
-            <div class="leftSideNavbar">
-                <img src="/public/Ableton-Logo.svg" alt="Ableton-Logo" class="logoImage" />
-                <ul class="fields">
-                    <li>Live</li>
-                    <li>Push</li>
-                    <li>Note</li>
-                    <li>Link</li>
-                    <li>Shop</li>
-                    <li>Packs</li>
-                    <li>Help</li>
-                    <li style="color: #ff764d;">More +</li>
-                </ul>
+            <div class="topNavbar">
+                <div class="leftSideNavbar">
+                    <img src="/public/Ableton-Logo.svg" alt="Ableton-Logo" class="logoImage" />
+                    <ul class="fields">
+                        <li>Live</li>
+                        <li>Push</li>
+                        <li>Note</li>
+                        <li>Link</li>
+                        <li>Shop</li>
+                        <li>Packs</li>
+                        <li>Help</li>
+                        <li style="color: #ff764d;" onclick="OpenNav()" id="more">More +</li>
+                    </ul>
+                </div>
+                <div class="rightSideNavbar">
+                    <p style="color: #0000ff;">Try Live for free</p>
+                    <p style="font-size: 16px;">Log in or register</p>
+                </div>
             </div>
-            <div class="rightSideNavbar">
-                <p style="color: #0000ff;">Try Live for free</p>
-                <p style="font-size: 16px;">Log in or register</p>
+
+            <div class="bottomNavbar">
+                <section>
+                    <h2>More on Ableton.com:</h2>
+                    <ul style="justify-content: flex-start;gap: 50px;">
+                        <li>Blog</li>
+                        <li>Ableton for the Classroom</li>
+                        <li>Ableton for Colleges and Universities</li>
+                        <li>Certified Training</li>
+                        <li style="color: #ff764d;">About Ableton</li>
+                        <li>Jobs</li>
+                        <li>Apprenticeships</li>
+                    </ul>
+                </section>
+
+                <section>   
+                    <h2>More from Ableton:</h2>
+                    <div class="bottomSection">
+                        <div>
+                            <ul>
+                                <li>Loop</li>
+                                <li>Watch Talks, Performances and Features from Ableton's Summit for Music Makers</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>Learning Music</li>
+                                <li>Learn the fundamentals of music making right in your browser.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>Learning Synths</li>
+                                <li>Get started with synthesis using a web-based synth and accompanying lessons.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>Making Music</li>
+                                <li>Some tips from 74 Creative Strategies for Electronic Producers.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
             </div>
         </nav>
+
+        <div class="stickyHeader">
+            <ul>
+                <li style="color: #ff764d;">About</li>
+                <li>Jobs</li>
+                <li>Apprenticeships</li>
+            </ul>
+        </div>
 
         <div class="sectionsContainer">
             <header>
@@ -92,9 +147,6 @@
             <div class="pictureSection">
                 <div class="pictureSectionBg" style="left: 0; width: 58.5%; background-color: #b6ffc0;"></div>
                 <div class="pictureGrid">
-                    <!-- <div class="pictureThree" >csac</div>
-                    <div class="pictureFour"></div>
-                    <div class="pictureFive">cac</div> -->
                     <img src="/public/ivana-cajina-T9YfR-xHjBs-unsplash.jpg" alt="picture2" class="pictureThree">
                     
                     <img src="public/ivana-cajina-T9YfR-xHjBs-unsplash.jpg" alt="picture3" class="pictureFour">
@@ -256,6 +308,8 @@
             </section>
         </footer>
     </div>
+
+    <script src="./action.js"></script>
 </body>
 
 </html>
