@@ -1,7 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/futura-pt');
 
 :root {
-    --textColor: red;
     --backgroundColor: #f3f3f3;
     --fontFamily: 'Futura PT', sans-serif;
 }
@@ -23,7 +22,6 @@ body {
     margin: auto;
     max-width: 1585px;
     position: relative;
-
 }
 
 nav {
@@ -65,7 +63,7 @@ li {
 }
 
 .sectionsContainer {
-    padding: 70px 0px 135px;
+    padding: 0px 0px 135px;
 }
 
 .bottomNavbar{
@@ -392,13 +390,13 @@ footer>section:last-child {
 }
 
 .stickyHeader{
-    position: absolute;
+    position: sticky;
     padding: 25px 0px;
     width: 100%;
-    max-width: 1585px;
     background-color: rgb(255, 255, 255, 0.9);
     overflow: hidden;
     transition: 0.3s linear;
+    top: 0;
     z-index: 1;
 }
 

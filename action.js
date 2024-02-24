@@ -15,14 +15,13 @@ const OpenNav = () => {
 }
 
 document.addEventListener("scroll", ()=>{
-    let up = option? 430: 70
     let down = option? 450: 100
 
     if((window.scrollY > lastScroll) && window.scrollY > down){
         fixedNavbar.style.top = "-75px"
     }else{
-        fixedNavbar.style.position = window.scrollY <= up? "absolute" : "fixed"
-        fixedNavbar.style.top = window.scrollY <= up? "unset" : "0"
+        // fixedNavbar.style.position = window.scrollY <= up? "absolute" : "fixed"
+        fixedNavbar.style.top = "0"
     }
 
     lastScroll = window.scrollY
@@ -35,5 +34,21 @@ const playVideo = () => {
 
     ytVideo.src += "?&autoplay=1"
 }
+
+
+// Extra Code
+
+
+// let up = option? 430: 70
+// let down = option? 450: 100
+
+// if((window.scrollY > lastScroll) && window.scrollY > down){
+//     fixedNavbar.style.top = "-75px"
+// }else{
+//     fixedNavbar.style.position = window.scrollY <= up? "absolute" : "fixed"
+//     fixedNavbar.style.top = window.scrollY <= up? "unset" : "0"
+// }
+
+// lastScroll = window.scrollY
 
 
