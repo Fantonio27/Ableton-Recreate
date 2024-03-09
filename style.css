@@ -48,7 +48,7 @@ nav {
     width: 60px;
 }
 
-.fields, .second-field{
+.fields{
     display: flex;
     gap: 40px;
 }
@@ -89,7 +89,7 @@ li {
 }
 
 :is(.bottomNavbar) li {
-    font-size: clamp(16px, 1.5vw,20px);
+    font-size: clamp(18px, 1.5vw,20px);
     font-weight: 400;
     line-height: 30px;
 }
@@ -416,8 +416,14 @@ footer>section:last-child {
 }
 
 .first-section{
+    display: flex;
     justify-content: flex-start;
     gap: 50px;
+    margin-bottom: 20px;
+}
+
+.second-field{
+    display: none;
 }
 
 
@@ -445,7 +451,9 @@ footer>section:last-child {
     }
     
     .second-field{
+        display: flex;
         gap: 0px;
+        margin-bottom: 20px;
     }
 
     .second-field > li{
