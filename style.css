@@ -104,7 +104,7 @@ header {
     width: 80%;
     height: calc(100vh - 120px);
     background: url("./HeaderPicture.jpg") rgba(8, 8, 8, 0.3);
-    background-blend-mode: multiply;
+    /* background-blend-mode: multiply; */
     background-position: center;
     background-size: cover;
     display: flex;
