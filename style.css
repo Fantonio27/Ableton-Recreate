@@ -48,7 +48,7 @@ nav {
     width: 60px;
 }
 
-.fields {
+.fields, .second-field{
     display: flex;
     gap: 40px;
 }
@@ -66,12 +66,12 @@ li {
     padding: 0px 0px 135px;
 }
 
-.bottomNavbar{
+.bottomNavbar {
     padding: 38px 0px 45px;
     display: none;
 }
 
-.bottomNavbar > section:first-child{
+.bottomNavbar>section:first-child {
     margin-bottom: 40px;
 }
 
@@ -80,7 +80,7 @@ li {
     gap: 20px;
 }
 
-.bottomSection > div {
+.bottomSection>div {
     width: 25%;
 }
 
@@ -89,12 +89,12 @@ li {
 }
 
 :is(.bottomNavbar) li {
-    font-size: 20px;
+    font-size: clamp(16px, 1.5vw,20px);
     font-weight: 400;
     line-height: 30px;
 }
 
-:is(.bottomNavbar) h2{
+:is(.bottomNavbar) h2 {
     font-size: 30px;
     margin-bottom: 20px;
 }
@@ -113,7 +113,7 @@ header {
 }
 
 header>h1 {
-    font-size: 138px;
+    font-size: clamp(80px, 15vw, 138px);
     color: #FD5948;
 }
 
@@ -128,7 +128,7 @@ header>h1 {
 }
 
 .textSection>section>h2 {
-    font-size: 30px;
+    font-size: clamp(20px, 2.5vw, 30px);
 }
 
 .textSection>section>p {
@@ -149,7 +149,7 @@ header>h1 {
     max-width: 800px;
 }
 
-.imageVideoBg{
+.imageVideoBg {
     width: 100%;
     max-height: 430px;
     object-fit: cover;
@@ -163,14 +163,14 @@ header>h1 {
     object-fit: cover;
 }
 
-.circle{
+.circle {
     height: 100px;
     width: 100px;
     background-color: #0000ff;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -223,6 +223,7 @@ header>h1 {
     width: 85%;
     margin: auto;
     max-height: 670px;
+    background-color: #b1c5ff;
 }
 
 .boxContainer>div {
@@ -231,22 +232,22 @@ header>h1 {
 
 .boxImageContainer>img {
     width: 100%;
-    height: 100%;
+    max-height: 100%;
     object-fit: cover;
 }
 
 .boxTextContainer {
-    background-color: #b1c5ff;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 30px;
+    min-height: 300px;
 }
 
 .boxTextContainer>h2 {
-    width: 60%;
-    font-size: 30px;
+    width: 80%;
+    font-size: clamp(20px, 2vw, 30px);
 }
 
 footer {
@@ -257,7 +258,7 @@ footer {
 }
 
 footer li {
-    font-size: 20px;
+    font-size: clamp(16px, 2vw,20px);
     font-weight: 400;
     color: rgba(1, 1, 1, 0.9);
     line-height: 2rem;
@@ -389,7 +390,7 @@ footer>section:last-child {
     object-fit: cover;
 }
 
-.stickyHeader{
+.stickyHeader {
     position: sticky;
     padding: 25px 0px;
     width: 100%;
@@ -400,9 +401,123 @@ footer>section:last-child {
     z-index: 1;
 }
 
-.stickyHeader > ul{
+.stickyHeader>ul {
     display: flex;
     gap: 40px;
     align-items: center;
     margin-left: 40px;
+}
+
+.menu-button{
+    display: none;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.first-section{
+    justify-content: flex-start;
+    gap: 50px;
+}
+
+
+@media only screen and (max-width:1439px) {
+    .sectionsContainer {
+        background-color: lightcoral;
+    }
+
+    .fields > li, .rightSideNavbar{
+        font-size: 17px;
+    }
+
+    footer{
+        padding: 50px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .sectionsContainer {
+        background-color: lightgray;
+    }
+
+    .fields, .rightSideNavbar{
+        display: none;
+    }
+    
+    .second-field{
+        gap: 0px;
+    }
+
+    .second-field > li{
+        width: 100%;
+        text-align: left;
+    }
+
+    .menu-button{
+        display: flex;
+    }
+
+    .textSection {
+        margin-top: 100px;
+    }
+
+    .textSection>section {
+        width: 70%;
+        margin: auto;
+    }
+
+    .boxContainer {
+        width: 85%;
+        flex-direction: column;
+        max-height: max-content;
+    }
+
+    .boxContainer>div {
+        width: 100%;
+    }
+
+    .boxImageContainer>img {
+        max-height: 500px;
+    }
+
+    footer>section{
+        flex-direction: column;
+    }
+
+    footer>section>section, .form{
+        width: 100%;
+    }
+    
+    .first-section > li{
+        line-height: 30px;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .sectionsContainer {
+        background-color: #b1c5ff;
+    }
+
+  
+    .footerLowerSection{
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .first-section{
+       flex-direction: column;
+        gap: 10px;
+    }
+
+    .first-section > li{
+        width: 100%;
+    }
+
+    .bottomSection{
+        flex-direction: column;
+    }
+
+    .bottomSection > div{
+        width: 100%;
+    }
 }
