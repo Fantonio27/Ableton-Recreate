@@ -103,9 +103,9 @@ header {
     margin: auto;
     width: 80%;
     height: calc(100vh - 120px);
-    /* background: linear-gradient(0deg,rgba(8, 8, 8, 0.3),rgba(8, 8, 8, 0.3)), url("./HeaderPicture.jpg") ; */
-    background: url("./HeaderPicture.jpg") rgba(8, 8, 8, 0.3);
-    background-blend-mode: overlay;
+    background: linear-gradient(0deg,rgba(8, 8, 8, 0.3),rgba(8, 8, 8, 0.3)), url("./HeaderPicture.jpg") ;
+    /* background: url("./HeaderPicture.jpg") rgba(8, 8, 8, 0.3);
+    background-blend-mode: overlay; */
     background-position: center;
     background-size: cover;
     display: flex;
